@@ -3,6 +3,14 @@
   --title-text-color: black var(--title-text-color);
   --accent-color: blue var(--accent-color);
   --prmary-white-color: white var(--prmary-white-color);
+  --Logo-blue-color: #2196f3;
+  --Logo-black-color: #000000;
+  --Logo-white-color: #ffffff;
+  --h2-text-color: #212121;
+  --p-text-color: #757575;
+  --footer-header-background: #2f303a;
+  --our-team-background: #f5f4fa;
+}
 }
 .body {
   font-family: "Roboto", "sans-serif";
@@ -60,6 +68,48 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center
 }
+.no-display {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}
+button.filter {
+  padding: 6px 22px 6px 22px;
+  color: var(--h2-text-color);
+  background-color: var(--our-team-background);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+}
+button.filter:hover,
+button.active:focus {
+  color: var(--Logo-white-color);
+  background-color: var(--Logo-blue-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-color: var(--Logo-white-color);
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.5); /* Параметры тени */
+}
+.search-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 50px;
+}
+.search-menu > li:not(:last-child) {
+  margin-right: 8px;
+}
 
 /* section team */
 .team{background: #F5F4FA;}
@@ -110,7 +160,7 @@ color: #757575;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 1.42;
+line-height: 1.14;
 }
 
 /* Contacts */
@@ -177,3 +227,14 @@ line-height: 1.42;
   text-decoration: none;
     color: white
 }
+.title-portfolio {
+font-family:"Roboto";
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+/* identical to box height, or 200% */
+
+letter-spacing: 0.06em;
+
+color: #212121;
